@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Street Ryders
+{% endblock %}
+
+{%  block content %}
+  <!-- container-fluid makes the element full screen width -->
+  <div class="container-fluid">
+    <div class="row">
+      <img style="width: 100%" src="{% static 'img/kawi3.jpg' %}" alt="">
+    </div>
+  </div>
+
+  <div class="py">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto my-2 text-center">
+          {% if searched_item %}
+            <h3 class="font-weight-bold">Products related to "{{ searched_item }}"</h3>
+          {% else %}
+            <h3 class="font-weight-bold">All Products</h3>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div style="margin-bottom: 100px;" class="row mb-5">
+      {% if products %}
+        {% for product in products %}
+          {% if product.image.url and product.description and product.stock >= 1 %}
+            <div class="col-9 mx-auto col-md-6 col-lg-3">
+              <div class="card mb-5" style="border-color: transparent;">
+                <div class="p-4 text-center">
+                  <a href="{{product.get_url}}">
+                    <img src="{{product.image.url}}" class="card-img-top home-img" alt="{{product.name}}">
+                  </a>
+                </div>
+                <div class="card-footer d-flex justify-content-between"
+                style="background: transparent; border-color: transparent;">
+                  <p class="font-weight-bold mb-0">
+                    {{product.name}}
+                  </p>
+                  <h5 class="text-info font-italic mb-0">
+                    ${{product.price}}
+                  </h5>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% else %}
+        <p class="mx-auto mt-5">Sorry, we don't have anything like that in our inventory.</p>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

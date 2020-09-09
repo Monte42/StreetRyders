@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Street Ryders{% endblock %}
+{%  block content %}
+  <div class="text-center">
+    <br>
+    <br>
+    <h1 class="text-center product_title">
+      Thank you for your patronage
+    </h1>
+    <br>
+    <br>
+    <p>Your order number is : <strong>{{ customer_order.id }}</strong></p>
+    <br>
+    <p>
+      We have sent you a confirmation email containing the details of your order
+      and will begin processing your order immediately.
+    </p>
+  </div>
+{% endblock %}
