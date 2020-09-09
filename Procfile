@@ -1,1 +1,1 @@
-web gunicorn aaPeoplesLog.wsgi --log-file -
+web gunicorn street_ryders.wsgi --log-file -
