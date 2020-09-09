@@ -25,7 +25,7 @@ SECRET_KEY = 'g7g8wn(zos#(v9-g35&*+rc((+x5giu+=qs*_upc6-(avw@0g4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['streetryders.herokuapp.com','127.0.0.1']
 
 
 # Application definition
