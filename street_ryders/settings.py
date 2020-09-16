@@ -139,7 +139,7 @@ STRIPE_SECRET_KEY = 'sk_test_j6zBjjpbsv7nnITBF9J8MP2G004cQZPe23'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # MailGun
-EMAIL_HOST = 'smtp.mailgun.org'
-EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'postmaster@mail.streetryders.com'
-EMAIL_HOST_PASSWORD = '6446bf24aebfd4cf04a17eb55fdcbb1a-9dfbeecd-bcaa4ac4'
+EMAIL_HOST = '#'
+EMAIL_PORT = '#'
+EMAIL_HOST_USER = '#'
+EMAIL_HOST_PASSWORD = '#'
