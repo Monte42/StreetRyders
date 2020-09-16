@@ -133,8 +133,8 @@ STATICFILES = [os.path.join(BASE_DIR, 'static')]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
 # These keys are for payments, These are for testing get real ones to launch
-STRIPE_PUBLISHABLE_KEY = 'pk_test_BMlpE0Ju89jdcoblQ8QdItws00A6S9Ew5R'
-STRIPE_SECRET_KEY = 'sk_test_j6zBjjpbsv7nnITBF9J8MP2G004cQZPe23'
+STRIPE_PUBLISHABLE_KEY = '#'
+STRIPE_SECRET_KEY = '#'
 # Telling crispy_forms to use bootstrap4
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
