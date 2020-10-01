@@ -139,7 +139,7 @@ STRIPE_SECRET_KEY = '#'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # MailGun
-EMAIL_HOST = '#'
-EMAIL_PORT = '#'
-EMAIL_HOST_USER = '#'
-EMAIL_HOST_PASSWORD = '#'
+EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'postmaster@mail.#.com'
+EMAIL_HOST_PASSWORD = '#-#-#'
